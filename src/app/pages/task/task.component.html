@@ -1,0 +1,163 @@
+<div class="dashboard-page">
+  <div class="container">
+    <div class="mat-toolbar">
+      <mat-toolbar>
+        <img src="/assets/images/left_task.svg" class="image-header" />
+        <span class="title-mat-toolbar">Task</span>
+        <div class="user-box">
+          <p class="username">Kate Westrich</p>
+          <span class="icons">
+            <img src="/assets/images/icon_k.svg" alt="" />
+          </span>
+        </div>
+      </mat-toolbar>
+    </div>
+    <div class="left-toolbar">
+      <a href="/dashboard">
+        <img
+          class="left_task"
+          src="/assets/images/dashboard_nonselect.svg"
+          alt=""
+        />
+      </a>
+      <a href="/task">
+        <img class="left_dashboard" src="/assets/images/task_select.svg" alt=""
+      /></a>
+      <img
+        class="logout_btn"
+        (click)="logout()"
+        src="/assets/images/logout.svg"
+        alt=""
+      />
+    </div>
+    <table class="table menu-bar">
+      <tbody>
+        <td>
+          <span class="box">
+            <img src="/assets/images/todo_logo.svg" class="box-image" />
+            <span class="box-text">To Do</span>
+            <span class="number-box">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/in_progress.svg" class="box-image" />
+            <span class="box-inProgress"> In progress</span>
+            <span class="number-inProgress">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/done.svg" class="box-image" />
+            <span class="done"> Done <ins>Today</ins> </span>
+            <span class="number-done">10</span>
+          </span>
+        </td>
+      </tbody>
+    </table>
+    <div class="tasks-bar">
+      <div class="title-task"></div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+        <img class="edit_icon" src="/assets/images/edit.svg" alt="" />
+      </div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+        <img class="edit_icon" src="/assets/images/edit.svg" alt="" />
+      </div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+        <img class="edit_icon" src="/assets/images/edit.svg" alt="" />
+      </div>
+      <img
+        class="btn_task"
+        src="/assets/images/add_todo.svg"
+        alt=""
+        (click)="openDialog()"
+      />
+    </div>
+
+    <div class="tasks-bar">
+      <div class="title-task"></div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+        <img class="edit_icon" src="/assets/images/edit.svg" alt="" />
+      </div>
+      <img
+        class="btn_task"
+        src="/assets/images/add_inprogress.svg"
+        alt=""
+        (click)="openDialog()"
+      />
+    </div>
+
+    <div class="tasks-bar">
+      <div class="title-task"></div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+        <img class="edit_icon" src="/assets/images/edit.svg" alt="" />
+      </div>
+      <img
+        class="btn_task"
+        src="/assets/images/add_done.svg"
+        alt=""
+        (click)="openDialog()"
+      />
+    </div>
+  </div>
+</div>

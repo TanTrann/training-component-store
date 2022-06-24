@@ -1,0 +1,162 @@
+/* Login Page */
+.login-page {
+  height: 100%;
+  width: 100%;
+  background-color: #ff5733;
+  position: relative;
+  .container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    .login-form {
+      margin: auto;
+      width: 513px;
+      height: 355px;
+      background: #ffffff;
+      border-radius: 20px;
+    }
+    .title1 {
+      text-align: center;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28.13px;
+      letter-spacing: 0em;
+      color: #e22f08;
+      padding-top: 9%;
+      padding-bottom: 6px;
+    }
+    .title2 {
+      font-family: "Roboto";
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14.06px;
+      padding-bottom: 3%;
+      color: #8e8e8e;
+    }
+    .input-login {
+      box-sizing: border-box;
+      background: #ffffff;
+      padding-left: 8px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      padding: 5px 0;
+      margin-bottom: -5px;
+      padding-left: 8px;
+    }
+
+    .input-login::placeholder {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      color: #484848;
+    }
+    .login-alert {
+      box-sizing: border-box;
+      background: #ffffff;
+      padding-bottom: 5px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      color: red;
+      padding-left: 45px;
+    }
+  }
+}
+
+.mat-icon {
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+::ng-deep .mat-form-field-flex:hover .mat-form-field-outline {
+  opacity: 1 !important;
+  color: #e22f08;
+}
+
+.mat-form-field {
+  width: 431px;
+  height: 45px;
+  display: flex;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3%;
+  display: block;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  width: 431px;
+  height: 45px;
+  top: 13px !important;
+  bottom: -5px !important;
+}
+::ng-deep .mat-form-field-outline-start {
+  border-radius: 12px 0 0 12px !important;
+  min-width: 12px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+  border-radius: 0 12px 12px 0 !important;
+}
+
+.mat-flat-button {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  top: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #ff5733;
+  width: 431px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+
+// .ng-valid[required], .ng-valid.required  {
+//   border-left: 5px solid #42A948; /* green */
+// }
+
+// .ng-invalid:not(form)  {
+//   border-left: 5px solid #a94442; /* red */
+// }
+.loading {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1009;
+  background: rgba(4, 18, 88, 0.4);
+  display: flex;
+
+  .spinner {
+    margin: auto;
+  }
+  p {
+    padding-top: 10px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px !important;
+    color: #ffffff;
+    position: fixed;
+    text-align: center;
+  }
+  ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #ffffff!important;
+} 
+}

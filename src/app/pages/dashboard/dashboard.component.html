@@ -1,0 +1,212 @@
+<div class="dashboard-page">
+  <div class="container">
+    <div class="image.png">
+      <mat-toolbar>
+        <img src="/assets/images/dashboard_logo.svg" class="image-header" />
+        <span class="title-mat-toolbar">Dashboard</span>
+        <div class="user-box">
+          <p class="username">Kate Westrich</p>
+          <span class="icons">
+            <img src="/assets/images/icon_k.svg" alt="" />
+          </span>
+        </div>
+      </mat-toolbar>
+    </div>
+    <div class="left-toolbar">
+      <img
+        routerLink="/dashboard"
+        class="left_dashboard"
+        src="/assets/images/left_dashboard.svg"
+        alt=""
+      />
+      <img
+        routerLink="/task"
+        class="left_task"
+        src="/assets/images/left_task.svg"
+        alt=""
+      />
+      <img
+        class="logout_btn"
+        (click)="logout()"
+        src="/assets/images/logout.svg"
+        alt=""
+      />
+    </div>
+    <table class="table menu-bar">
+      <tbody>
+        <td>
+          <span class="box">
+            <img src="/assets/images/todo_logo.svg" class="box-image" />
+            <span class="box-text">To Do</span>
+            <span class="number-box">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/in_progress.svg" class="box-image" />
+            <span class="box-inProgress"> In progress</span>
+            <span class="number-inProgress">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/done.svg" class="box-image" />
+            <span class="done"> Done <ins>Today</ins> </span>
+            <span class="number-done">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/done.svg" class="box-image" />
+            <span class="done"> Done <ins>this week</ins></span>
+            <span class="number-done">10</span>
+          </span>
+        </td>
+        <td>
+          <span class="box">
+            <img src="/assets/images/done.svg" class="box-image" />
+            <span class="done"> Done <ins>this month</ins></span>
+            <span class="number-done">10</span></span
+          >
+        </td>
+      </tbody>
+    </table>
+    <div class="tasks-bar">
+      <div class="title-task">Tasks in progress</div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+      </div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+      </div>
+      <div class="task-box">
+        <div class="task-name">
+          <strong
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
+          >
+        </div>
+        <div class="task-content">
+          Sed vitae lobortis nulla, ut vulputate augue. Nullam mollis non ante
+          et consequat. Cras quis dapibus augue. Phasellus nec fermentum mauris.
+          Aenean et eros ut erat gravida rhoncus a et velit.
+        </div>
+        <span class="task-date">15 dez 2021</span>
+        <img class="user_icon" src="/assets/images/user_icon.svg" alt="" />
+      </div>
+    </div>
+    <div class="line">
+      <img src="/assets/images/Line 1.svg" alt="" />
+    </div>
+    <div class="right-menu">
+      <div class="title-right">
+        <p>Next events</p>
+      </div>
+      <table class="table box-content">
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+      </table>
+      <div class="title-right">
+        <p>Events this month</p>
+      </div>
+      <table class="table box-content">
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+      </table>
+      <div class="title-right">
+        <p>Events next month</p>
+      </div>
+      <table class="table box-content">
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="task-box-sm">
+            <p class="time-text">08/01 - 19:00 - 20:00</p>
+            <p class="task-sm-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </td>
+      </table>
+    </div>
+  </div>
+</div>

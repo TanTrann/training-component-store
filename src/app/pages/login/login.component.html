@@ -1,0 +1,38 @@
+<ng-container *ngIf="vm$ | ngrxPush as vm">
+  <div class="login-page">
+    <div class="container">
+      <form class="login-form"  (ngSubmit)="submit()">
+        <p class="title1">Sign In</p>
+        <p class="title2">Please input your Login details to gain access.</p>
+        <app-input
+          [iconPrefix]="'emailIcon'"
+          [control]="vm.email"
+          [type]="'text'"
+          [placeholder]="'Enter your email address'"
+          [errorMessage]="'Must be a valid email address.'"
+        ></app-input>
+        <app-input
+          [iconPrefix]="'lockIcon'"
+          [control]="vm.password"
+          [type]="'password'"
+          [placeholder]="'Enter your password address'"
+          [errorMessage]="'Password must be at least 6 characters.'"
+        ></app-input>
+        <button mat-flat-button type="submit" Click="loadSpinner()">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="loading" *ngIf="vm.showSpinner">
+    <div class="spinner">
+      <app-spinner
+        class="example-margin"
+        [mode]="'indeterminate'"
+        [value]="'12'"
+      >
+      </app-spinner>
+      <p>Loading...</p>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,39 @@
+<div mat-dialog-content>
+  <p class="input-text">title</p>
+  <input class="input-content" type="text" />
+  <p class="input-text">description</p>
+  <input class="input-content" type="text" />
+
+  <table class="table table-input">
+    <tr>
+      <td class="date">
+        <p class="input-text">date</p>
+        <input type="text" class="input-sm" />
+      </td>
+      <td>
+        <p class="input-text">hour</p>
+        <input type="text" class="input-sm" />
+      </td>
+    </tr>
+    <tr>
+      <td class="responsable">
+        <p class="input-text">responsable</p>
+        <select class="input-sm-option">
+          <option value=""> </option>
+        </select>
+      </td>
+      <td>
+        <p class="input-text">Status</p>
+        <select class="input-sm-option">
+          <option class="input-sm-select" value="In progress">In progress</option>
+          <option class="input-sm-select" value="To do">To do</option>
+          <option class="input-sm-select" value="Done">Done</option>
+
+        </select>
+      </td>
+    </tr>
+  </table>
+</div>
+<div mat-dialog-actions>
+  <button class="btn-dialog">Save</button>
+</div>
