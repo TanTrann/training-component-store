@@ -18,6 +18,7 @@ export class InputComponent implements OnInit {
   @Input() errorMessage!: string;
   @Input() inputSumited?: boolean;
   @Input() getErrorMessage!: string;
+  
   @Input() control: FormControl = new FormControl();
   constructor() {}
   ngOnInit(): void {}

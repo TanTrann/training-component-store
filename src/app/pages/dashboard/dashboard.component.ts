@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     
     // check token khi load dashboard
-    if (!this.authService.loadToken()) {
+    if (!this.authService.getToken()) {
       this.router.navigate(['login']);
     }
   }

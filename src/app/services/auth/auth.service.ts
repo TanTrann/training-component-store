@@ -24,7 +24,7 @@ export class AuthService {
     );
   }
   // check token load dashboard
-  loadToken() {
+  getToken() {
     return localStorage.getItem('token');
   }
 

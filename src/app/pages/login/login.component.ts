@@ -12,8 +12,7 @@ import { Store } from '@ngrx/store';
 
 import { ComponentStore } from '@ngrx/component-store';
 import { LoginStore } from './login.store';
-
-
+import { User } from 'src/app/services/auth/user.model';
 
 @Component({
   selector: 'app-login',
@@ -22,8 +21,6 @@ import { LoginStore } from './login.store';
   providers: [LoginStore],
 })
 export class LoginComponent implements OnInit {
- 
- 
   vm$ = this.store.select((state) => {
     return {
       loginForm: state.loginForm,
@@ -34,7 +31,7 @@ export class LoginComponent implements OnInit {
     };
   });
 
- 
+
 
   public setPro(formControlName: string, type: string, placeholder: string) {
     return {
@@ -44,17 +41,13 @@ export class LoginComponent implements OnInit {
     };
   }
   constructor(private store: LoginStore) {}
- 
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 
   submit() {
     // const email = this.loginForm.value.email;
     // const password = this.loginForm.value.password;
     // // this.store.LoginUser(this.loginForm);
     this.store.loginStart();
-   
   }
 }
