@@ -21,33 +21,23 @@ import { User } from 'src/app/services/auth/user.model';
   providers: [LoginStore],
 })
 export class LoginComponent implements OnInit {
+  
+ 
+
   vm$ = this.store.select((state) => {
     return {
       loginForm: state.loginForm,
-      showSpinner: state.showSpinner,
       title: state.title,
       email: state.loginForm?.get('email') as FormControl,
       password: state.loginForm?.get('password') as FormControl,
     };
   });
 
-
-
-  public setPro(formControlName: string, type: string, placeholder: string) {
-    return {
-      formControlName: formControlName,
-      type: type,
-      placeholder: placeholder,
-    };
-  }
   constructor(private store: LoginStore) {}
 
   ngOnInit(): void {}
 
   submit() {
-    // const email = this.loginForm.value.email;
-    // const password = this.loginForm.value.password;
-    // // this.store.LoginUser(this.loginForm);
     this.store.loginStart();
   }
 }

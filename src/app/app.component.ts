@@ -4,10 +4,6 @@ import { Store } from '@ngrx/store';
 import { AuthService } from './services/auth/auth.service';
 import { IconService } from './services/icons/icon-service.service';
 
-
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,12 +15,12 @@ export class AppComponent {
   constructor(
     private iconService: IconService,
     private route: Router,
-    public authService: AuthService,
-
+    public authService: AuthService
   ) {
     this.iconService.registryIcon();
   }
-  // icon input
+
+  //check icon input
   ngDoCheck(): void {
     if (this.route.url == '') {
       this.displaymenu = false;
@@ -32,8 +28,6 @@ export class AppComponent {
       this.displaymenu = true;
     }
   }
-  // error mess
-  ngOnInit() {
-    
-  }
+
+  ngOnInit() {}
 }

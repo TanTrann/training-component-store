@@ -1,0 +1,17 @@
+.event {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  .event_date {
+    color: #6c6cea;
+    margin-bottom: 10px;
+  }
+  .event_description {
+    position: relative;
+  }
+}

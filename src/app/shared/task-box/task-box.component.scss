@@ -1,0 +1,41 @@
+.task_box {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 370px;
+  border-radius: 10px;
+  margin-top: 14px;
+  .task_box_title {
+    padding-top: 3px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .task_box_description {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+  .task_box_footer {
+    display: flex;
+    justify-content: space-between;
+    .task_box_date {
+      font-weight: 700;
+    }
+    .task_box_actions {
+      margin-top: -5px;
+      display: flex;
+      align-items: center;
+      .task_box_icon {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.mat_menu {
+  position: fixed;
+  margin: 39px 21px 32px 325px;
+}

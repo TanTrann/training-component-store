@@ -1,5 +1,5 @@
 /* Login Page */
-.login-page {
+.login_page {
   height: 100%;
   width: 100%;
   background-color: #ff5733;
@@ -9,7 +9,7 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.9);
     display: flex;
-    .login-form {
+    .login_form {
       margin: auto;
       width: 513px;
       height: 355px;
@@ -36,44 +36,10 @@
       padding-bottom: 3%;
       color: #8e8e8e;
     }
-    .input-login {
-      box-sizing: border-box;
-      background: #ffffff;
-      padding-left: 8px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 10px;
-      line-height: 12px;
-      padding: 5px 0;
-      margin-bottom: -5px;
-      padding-left: 8px;
-    }
-
-    .input-login::placeholder {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 10px;
-      line-height: 12px;
-      color: #484848;
-    }
-    .login-alert {
-      box-sizing: border-box;
-      background: #ffffff;
-      padding-bottom: 5px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 10px;
-      line-height: 12px;
-      color: red;
-      padding-left: 45px;
-    }
   }
 }
 
-.mat-icon {
+.mat_icon {
   padding: 5px;
   width: 15px;
   height: 15px;
@@ -84,20 +50,11 @@
   color: #e22f08;
 }
 
-.mat-form-field {
-  width: 431px;
-  height: 45px;
-  display: flex;
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 3%;
-  display: block;
-}
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
   width: 431px;
   height: 45px;
-  top: 13px !important;
-  bottom: -5px !important;
+  // top: 13px !important;
+  // bottom: -5px !important;
 }
 ::ng-deep .mat-form-field-outline-start {
   border-radius: 12px 0 0 12px !important;
@@ -109,19 +66,19 @@
 }
 
 .mat-flat-button {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 10px;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 12px !important;
   letter-spacing: 0em;
-  top: 20px;
+  top: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   background-color: #ff5733;
-  width: 431px;
+  width: 431px !important;
   height: 45px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto !important;
   color: white;
 }
 
@@ -156,7 +113,42 @@
     position: fixed;
     text-align: center;
   }
-  ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
-    stroke: #ffffff!important;
-} 
+  ::ng-deep .mat-progress-spinner circle,
+  .mat-spinner circle {
+    stroke: #ffffff !important;
+  }
+  .input_dialog {
+    width: 100px;
+    height: 10px;
+  }
+}
+.input_box {
+  width: 431px;
+  height: 45px;
+  padding-left: 39px;
+  padding-bottom: 21px;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-prefix,
+.mat-form-field-appearance-outline .mat-form-field-suffix {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  margin: -10px 0 0 0;
+}
+mat-error {
+  font-family: Roboto;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 9px;
+}
+::ng-deep .mat-form-field-infix {
+  padding-left: 10px !important;
+  top: -6px !important;
 }

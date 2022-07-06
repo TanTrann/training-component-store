@@ -6,12 +6,11 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TaskComponent } from './pages/task/task.component';
 
-
 const routes: Routes = [
   {
     // khi đường dẫn là '' thì nó sẽ được tự động gọi đến đường dẫn là '/index'
     path: '',
-    redirectTo: '/login',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {

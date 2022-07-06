@@ -7,19 +7,17 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./input.component.scss'],
 })
 export class InputComponent implements OnInit {
-  // @Input() attrr: any;
+  constructor() {}
+
+  ngOnInit(): void {}
   @Input() src!: string;
   @Input() type!: string;
   @Input() placeholder!: string;
-
   @Input() iconPrefix!: string;
   @Input() iconSuffix!: string;
-
   @Input() errorMessage!: string;
   @Input() inputSumited?: boolean;
   @Input() getErrorMessage!: string;
-  
+
   @Input() control: FormControl = new FormControl();
-  constructor() {}
-  ngOnInit(): void {}
 }

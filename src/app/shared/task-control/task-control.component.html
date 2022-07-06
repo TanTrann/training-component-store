@@ -1,0 +1,14 @@
+<mat-card class="task_control" [ngStyle]="customStyles()">
+  <mat-icon *ngIf="icon" svgIcon="{{ icon }}"></mat-icon>
+  <span class="task_title" *ngIf="title"
+    >{{ title }}
+    <span
+      class="task_underline"
+      [ngStyle]="customStyles()"
+      *ngIf="tag"
+    >
+      {{ tag }}</span
+    ></span
+  ><span class="quantites" *ngIf="quantites">{{ quantites }}</span> 
+
+</mat-card>

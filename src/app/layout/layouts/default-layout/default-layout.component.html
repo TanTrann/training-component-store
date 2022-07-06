@@ -1,0 +1,11 @@
+<mat-drawer-container class="layout_container">
+  <mat-drawer mode="side" opened class="sidebar_box">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header></app-header>
+    <main class="main_content">
+      <ng-content></ng-content>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>

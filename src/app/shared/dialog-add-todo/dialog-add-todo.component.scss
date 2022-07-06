@@ -1,13 +1,24 @@
+// Dialog CSS
+
 ::ng-deep .mat-dialog-container {
   width: 440px !important;
   height: 385px !important;
   background: #ffe6ea !important;
   border-radius: 30px !important;
   display: block;
-   
 }
 
-.input-content {
+// Dialog CSS
+
+::ng-deep .mat-dialog-container {
+  width: 440px !important;
+  height: 385px !important;
+  background: #ffe6ea !important;
+  border-radius: 30px !important;
+  display: block;
+}
+
+.input_content {
   width: 380px;
   height: 32px;
   background: #ffffff;
@@ -15,7 +26,7 @@
   border-radius: 2px;
   margin-bottom: 20px;
 }
-.input-sm {
+.input_sm {
   width: 180px;
   height: 32px;
   background: #ffffff;
@@ -24,7 +35,7 @@
   margin-bottom: 20px;
 }
 
-.input-text {
+.input_text {
   font-family: "Pragati Narrow";
   font-style: normal;
   font-weight: 400;
@@ -35,8 +46,8 @@
   text-transform: uppercase;
   margin-bottom: -1px;
 }
-.btn-dialog {
-  font-family: Roboto;
+.btn_dialog {
+  font-family: "Roboto";
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
@@ -44,38 +55,77 @@
   text-align: center;
   color: #ffffff;
   width: 105px;
-  height: 28px;
+  height: 34px;
   background: #fb8694;
   border-radius: 20px;
   border: 0px;
   box-shadow: 0px 4px 4px 0px #00000040;
-  margin-top: 19px;
-  margin-left: 267px;
+  float: right;
 }
-.date{
-    padding-right: 10px;
+.date {
+  padding-right: 10px;
 }
-.responsable{
-    padding-right: 10px;
+.responsable {
+  padding-right: 10px;
 }
-.input-sm-option{
-  width: 180px;
-  height: 32px;
-
+.input_sm_option {
+  width: 186px;
+  height: 37px;
   border: 1px solid #c1ccdd;
   border-radius: 2px;
   margin-bottom: 20px;
 }
 
-
-.input-sm-select [value="In progress"] {
+.input_sm_select [value="In progress"] {
   color: rgb(200, 211, 49) !important;
 }
-
-select option[value="2"] {
-  background: rgba(150, 150, 150, 0.3);
+.input_box {
+  width: 380px;
+  padding-bottom: 15px;
+}
+.input_box_left {
+  width: 180px;
+  border-radius: 5px !important;
+}
+.input_box_right {
+  width: 180px;
+  border-radius: 5px !important;
+  margin-right: 15px;
+  float: right;
 }
 
-select option[value="3"] {
-  background: rgba(200, 200, 200, 0.3);
+.btn_input {
+  margin-top: 20px;
+  margin-right: 17px;
 }
+
+::ng-deep .mat-error {
+  font-size: 10px;
+  float: right;
+}
+
+.select_dialog {
+  margin-right: -100px;
+  background-color: #ffff;
+}
+
+::ng-deep .mat-form-field-flex {
+  padding: 3px 0.75em 0 0.75em !important;
+  width: 380px;
+  height: 37px;
+  margin-top: -9px !important;
+  border-radius: 2px !important;
+  font-size: 12px;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0 0 0 0;
+}
+::ng-deep .mat-error {
+  margin-top: -2px;
+  font-size: 10px;
+  float: right;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+  padding: 0;
+}
+

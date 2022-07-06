@@ -1,39 +1,60 @@
-<div mat-dialog-content>
-  <p class="input-text">title</p>
-  <input class="input-content" type="text" />
-  <p class="input-text">description</p>
-  <input class="input-content" type="text" />
-
-  <table class="table table-input">
-    <tr>
-      <td class="date">
-        <p class="input-text">date</p>
-        <input type="text" class="input-sm" />
-      </td>
-      <td>
-        <p class="input-text">hour</p>
-        <input type="text" class="input-sm" />
-      </td>
-    </tr>
-    <tr>
-      <td class="responsable">
-        <p class="input-text">responsable</p>
-        <select class="input-sm-option">
-          <option value=""> </option>
-        </select>
-      </td>
-      <td>
-        <p class="input-text">Status</p>
-        <select class="input-sm-option">
-          <option class="input-sm-select" value="In progress">In progress</option>
-          <option class="input-sm-select" value="To do">To do</option>
-          <option class="input-sm-select" value="Done">Done</option>
-
-        </select>
-      </td>
-    </tr>
-  </table>
-</div>
-<div mat-dialog-actions>
-  <button class="btn-dialog">Save</button>
+<div class="dialog_container">
+  <div class="dialog_add">
+    <form [formGroup]="taskForm">
+      <div class="input_box">
+        <p class="input_text">title</p>
+        <app-input
+          [control]="title"
+          [type]="'text'"
+          [errorMessage]="'Title invalid.'"
+        ></app-input>
+      </div>
+      <div class="input_box">
+        <p class="input_text">description</p>
+        <app-input
+          [control]="description"
+          [type]="'text'"
+          [errorMessage]="'Description invalid.'"
+        ></app-input>
+      </div>
+      <div class="input_box">
+        <p class="input_text">date</p>
+        <app-input
+          [control]="date"
+          [type]="'text'"
+          [errorMessage]="'Date invalid.'"
+        ></app-input>
+      </div>
+      <div class="input_box">
+        <p class="input_text">hour</p>
+        <app-input
+          [control]="hour"
+          [type]="'text'"
+          [errorMessage]="'Hour invalid.'"
+        ></app-input>
+      </div>
+      <div class="input_box_right">
+        <p class="input_text">Status</p>
+        <app-select-dialog
+          [control]="status"
+          class="select_dialog"
+          [optionList]="optionStatusList"
+        >
+        </app-select-dialog>
+      </div>
+      <div class="input_box_left">
+        <p class="input_text">responsable</p>
+        <app-select-dialog
+          [control]="responsable"
+          class="select_dialog"
+          [optionList]="optionResponList"
+        >
+        </app-select-dialog>
+      </div>
+      <div class="btn_input">
+        <app-button class="btn_dialog" (click)="onAdd()" >Save</app-button>
+      </div>
+    </form>
+  </div>
+  <!-- <button (click)="check()"> Check</button> -->
 </div>

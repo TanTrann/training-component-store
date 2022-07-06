@@ -1,284 +1,64 @@
-/* Rectangle 1 */
-.dashboard-page {
-  height: 100%;
+.container {
   width: 100%;
-  background: #ffe6ea;
+  padding: 30px;
+  position: relative;
+  .task-box {
+    width: 92%;
+    position: relative;
 
-  .container {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    .mat-toolbar {
-      background-color: #ffffff;
-      width: 100%;
-      height: 50px;
-      position: absolute;
-      .user-box {
-        margin-left: auto;
-      
-
-        .icons img{
-          margin-top: 8px;
-        }
-      }
-      mat-toolbar {
-        height: 50px;
-        background-color: #ffffff !important;
-        .image-header {
-          padding-right: 11px;
-        }
-      }
+    .task-list {
+      display: flex;
+      flex-wrap: wrap;
     }
-    .left-toolbar {
-      background-color: #ffffff;
-      width: 50px;
-      .left_dashboard {
-        text-align: center;
-        padding-left: 10px;
-        padding-top: 80px;
-      }
-      .left_task {
-        text-align: center;
-        padding-left: 15px;
-        padding-top: 20px;
-      }
-    }
-    .menu-bar {
-      margin-left: 50px;
-      margin-top: 75px;
-      height: 50px;
-      position: absolute;
-      td {
-        padding-left: 32px;
-      }
-      .done {
-        background-color: #ffffff;
+    .app-task-control {
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
 
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #58ba6e;
-        padding-top: 7px;
-        position: absolute;
-        display: block;
-        width: 100px;
-        text-align: center;
-      }
-      .number-done {
-        color: #58ba6e;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;
-        padding-left: 60px;
-      }
-      .box-inProgress {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #ffce5b;
-        padding-top: 3px;
-        position: absolute;
-        display: block;
-        margin-left: 15px;
-        margin-top: 4px;
-      }
-
-      .number-inProgress {
-        color: #ffce5b;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;
-        padding-left: 60px;
-      }
-
-      .box {
-        position: relative;
-        display: flex;
-        background-color: #ffffff;
-        padding: 15px 19px 15px 51px;
-        box-shadow: 1px 1px 1px #ccb8bc;
-
-        .box-image {
-          margin-top: 1px;
-          background-size: 25px;
-          margin-left: -34px;
-          padding-right: 50px;
-        }
-        .box-text {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          color: #fb8694;
-
-          position: absolute;
-          display: block;
-          padding-top: 5px;
-          margin-left: 31px;
-          margin-top: 2px;
-        }
-
-        .number-box {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 22px;
-          line-height: 26px;
-          color: #fb8694;
-          padding-left: 60px;
-
-          display: flex;
-        }
-      }
+      display: flex;
+      text-align: center;
+      padding: 0 10px;
     }
   }
-
-  .image-header {
-    padding-left: 60px;
+  .task_content {
+    margin-top: 20px;
+    .task_content_title {
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14px;
+      text-decoration-line: underline;
+      color: #6c6cea;
+    }
   }
-  .title-mat-toolbar {
-    color: #6c6cea;
-    font-family: "Roboto Slab" !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    font-size: 30px !important;
-    line-height: 40px !important;
-    padding-left: 10px;
+  .task_content_2 {
+    padding-left: 522px;
+    margin-top: -412px;
+    .task_content_title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration-line: underline;
+      color: #6c6cea;
+    }
+    .event_wrapper {
+      margin-bottom: 10px;
+    }
+    .event_list {
+      display: flex;
+      margin-top: 20px;
+      overflow-x: auto;
+      margin: 23px 0 30px 0;
+    }
   }
-}
-.task-bar {
-  padding-top: 150px;
-  padding-left: 30px;
-}
-.title-task {
-  padding-top: 180px;
-  padding-left: 30px;
-  font-family: "Roboto" !important;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
-  text-decoration-line: underline;
-  color: #6c6cea;
-}
-.logout_btn {
-  padding-left: 15px;
-  padding-top: 450px;
-}
-.task-box {
-  margin-top: 10px;
-  margin-left: 28px;
-  background-color: #ffffff;
-  height: 119px;
-  width: 355px;
-  left: 0px;
-  top: 0px;
-  border-radius: 10px;
-  padding-bottom: 8px;
-}
-.task-name {
-  padding: 10px 0 0 11px;
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
-  letter-spacing: 0em;
-}
-.task-content {
-  padding: 10px 11px 7px 11px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  display: flex;
-  align-items: center;
-  color: #333333;
-}
-.task-date {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  padding: 0 250px 10px 10px;
 }
 .line {
-  padding-top: 225px;
-  padding-left: 50px;
+  margin-left: 474px;
+  margin-top: -372px;
 }
-.title-right {
-  font-family: "Roboto Slab" !important;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15.83px;
-  letter-spacing: 0em;
-  text-decoration-line: underline;
-  color: #6c6cea;
-  padding-bottom: 10px;
-}
-.box-content {
-  padding-bottom: 30px;
-
-  td {
-    width: 220px;
-    height: 73px;
-  }
-}
-.right-menu {
-  padding-top: 180px;
-  padding-left: 30px;
-}
-.task-box-sm {
-  background-color: #ffffff;
-  height: 70px;
-  width: 225px;
-  left: 0px;
-  top: 0px;
-  border-radius: 10px;
-  margin-right: 20px;
-  box-shadow: 1px 1px 1px #ccb8bc;
-
-  .time-text {
-    font-family: "Roboto Slab" !important;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    padding: 5px 0 0 10px;
-    color: #6c6cea;
-  }
-}
-.task-sm-content {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  margin-top: -6px;
-  padding: 0 10px 10px 10px;
-}
-.user_icon {
-  position: absolute;
-}
-.username {
-  margin-top: 20px;
-  padding-right: 30px;
-  float: left;
-  font-family: "Roboto" !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 14px !important;
-  line-height: 20px !important;
+app-event-box.ng-star-inserted {
+  padding: 0 20px 0 0;
 }

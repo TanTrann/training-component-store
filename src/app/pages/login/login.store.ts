@@ -6,15 +6,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ComponentStore, tapResponse } from '@ngrx/component-store';
-import { catchError, concatMap, EMPTY, Observable, switchMap, tap } from 'rxjs';
+import { ComponentStore } from '@ngrx/component-store';
+
 import { AuthService } from 'src/app/services/auth/auth.service';
-import { AuthResponseData } from 'src/app/services/auth/AuthResponseData.model';
-import { User } from 'src/app/services/auth/user.model';
 
 const state = {
   loginForm: null as FormGroup | null,
-  showSpinner: false,
   title: 'text',
 };
 type State = typeof state;
@@ -22,7 +19,6 @@ type State = typeof state;
 @Injectable()
 export class LoginStore extends ComponentStore<State> {
   responsedata: any;
- 
 
   constructor(
     private authService: AuthService,
@@ -38,34 +34,28 @@ export class LoginStore extends ComponentStore<State> {
     });
   }
 
-  // readonly setdata = this.updater(() => {
-  //   return {
-  //     ...state,
-  //     email: state.email,
-  //     password:state.password
-  //   };
-  // });
   get email(): string {
     return this.get((x) => x.loginForm)?.value.email;
   }
+
   get password(): string {
     return this.get((x) => x.loginForm)?.value.password;
   }
+
   loginStart = () => {
+    // alert(this.email), alert(this.password);
     this.authService.login(this.email, this.password).subscribe({
       next: (result: any) => {
         if (result) {
           console.log(result);
           this.responsedata = result;
-          // localStorage.setItem('token', this.responsedata.token);
           localStorage.setItem('token', this.responsedata.token);
           this.router.navigate(['dashboard']);
         }
       },
-      error: (err: any) => {
-        alert('Incorrect email and password');
-      },
+      error: () => {},
     });
+    this.router.navigate(['dashboard']);
   };
 
   // email$ = this.get((state) => state.email);

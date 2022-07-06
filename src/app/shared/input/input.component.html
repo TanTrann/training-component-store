@@ -1,14 +1,13 @@
 <mat-form-field appearance="outline">
-  <!-- <mat-label *ngIf="label">{{label}}</mat-label> -->
   <mat-icon *ngIf="iconPrefix" matPrefix svgIcon="{{ iconPrefix }}"></mat-icon>
   <mat-icon *ngIf="iconSuffix" matSuffix svgIcon="{{ iconSuffix }}"></mat-icon>
   <input
-    [formControl]="control" 
+    [formControl]="control"
     [type]="type"
-    [placeholder]="placeholder"
     matInput
     required
-    class="input-login"
+    class="input_task"
+    [placeholder]="placeholder"
   />
   <mat-error *ngIf="inputSumited || (control.invalid && control.touched)">{{
     errorMessage

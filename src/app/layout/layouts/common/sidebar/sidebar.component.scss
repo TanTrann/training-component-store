@@ -1,0 +1,27 @@
+.sidebar {
+  width: 50px;
+  display: flex;
+  height: 95%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  .sidebar_box {
+    margin-top: 80px;
+  }
+  .sidebar_box_item {
+    margin-bottom: 30px;
+    color: #6c6cea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .logout {
+    background-color: white;
+    border: none;
+    color: #7942fb;
+  }
+}

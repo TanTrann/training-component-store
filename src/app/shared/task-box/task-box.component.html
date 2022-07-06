@@ -1,0 +1,19 @@
+<mat-card class="task_box">
+  <div *ngIf="title" class="task_box_title">{{ title }}</div>
+  <p class="task_box_description">{{ description }}</p>
+  <div class="task_box_footer">
+    <div *ngIf="date" class="task_box_date">{{ date }}</div>
+    <div class="task_box_actions">
+      <mat-icon
+        *ngFor="let icon of icons"
+        class="task_box_icon"
+        svgIcon="{{ icon }}"
+        [matMenuTriggerFor]="abc"
+      ></mat-icon>
+      <mat-menu #abc="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-card>

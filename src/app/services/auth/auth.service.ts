@@ -29,30 +29,11 @@ export class AuthService {
   }
 
   // chuyen token ve chuoi
-
   saveToken(token: string) {
     localStorage.setItem('token', token);
   }
 
-  formatUser(data: AuthResponseData) {
-    const expirationDate = new Date(
-      new Date().getTime() + +data.expiresIn * 1000
-    );
-    const user = new User(
-      data.username,
-      data.email,
-      data.phone,
-      data.birthday,
-      data.token,
-      expirationDate
-    );
-    return user;
-  }
   setUserInLocalStorage(user: User) {
     localStorage.setItem('userData', JSON.stringify(user));
-  }
-  logout() {
-    this.router.navigate(['/login']);
-    localStorage.removeItem('token');
   }
 }

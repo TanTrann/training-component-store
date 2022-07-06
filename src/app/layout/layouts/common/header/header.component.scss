@@ -1,0 +1,41 @@
+.header {
+  background: #ffffff;
+  height: 50px !important;
+  display: flex;
+  align-items: center;
+  .title_page {
+    color: #6c6cea;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .user_box {
+    display: flex;
+    align-items: center;
+    .user_name {
+      width: 90px;
+      height: 20px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #020000;
+      margin-top: 10px;
+    }
+    .user_icon {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-image: url("/../../../../../assets/images/icon_k.svg");
+      background-size: cover;
+      margin-left: 22px;
+    }
+  }
+  .space{
+    width: 100%;
+  }
+ 
+}
